@@ -1,17 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
+import ImgSlider from './ImgSlider'
+import Recommends from './Recommends'
+import Viewer from './Viewer'
+import NewDisney from './NewDisney'
+import Orignals from './Orignals'
+import Trending from './Trending'
 
 function Home() {
   return (
     <Container>
-        <h1>Hello</h1>
+        <ImgSlider/>
+        <Viewer/>
+        <Recommends/>
+        <NewDisney/>
+        <Orignals/>
+        <Trending/>
     </Container>
   )
 }
 
 
 const Container = styled.main`
-     position: relative;
+  position: relative;
   min-height: calc(100vh - 250px);
   overflow-x: hidden;
   display: block;
